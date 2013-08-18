@@ -52,7 +52,7 @@ at_strikeoff=%{$'\e[29m'%}
 
 if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
 	PROMPT='
-${fg_lgreen}%n@${at_underl}%m${at_underloff}${fg_white}[${fg_cyan}%~%{$reset_color%}$(git_prompt_info)$(svn_prompt_info)${fg_white}]
+${fg_lgreen}%n@${at_underl}%m${at_underloff}${fg_white}[${fg_cyan}%~%{$reset_color%}$(git_prompt_info)${fg_white}]
 ${fg_white}[${fg_green}%T${fg_white}]:${at_normal}'
 
 	ZSH_THEME_SVN_PROMPT_PREFIX=" on %{$fg_red%}svn:"
